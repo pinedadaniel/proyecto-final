@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from './layout';
+import Home from '../pages/HomePages';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import '../global.css'
 
@@ -9,7 +10,7 @@ const App = () => {
       <Layout>
         <Switch>
 
-          {/* <Route exact path = ''component={}/> */}
+     <Route exact path = '/'component={Home}/> 
 
         </Switch>
 

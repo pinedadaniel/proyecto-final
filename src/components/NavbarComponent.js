@@ -1,10 +1,12 @@
 import React from 'react';
-//import brand from '../images/brand.png';
+import brand from '../images/Brand.png';
 import { Link } from 'react-router-dom';
 import './styles/NavbarStyle.css'
-//import modal from './ModalComponent'
-import Home from '../images/HomeNavbar.svg';
-import icon from '../images/Brand.png';
+import product from '../images/product.svg';
+import energy from '../images/energy.svg';
+import liquor from '../images/liquor.svg';
+import beer from '../images/beer.svg';
+import cart from '../images/shopping-cart.svg';
 import $ from 'jquery';
 
 
@@ -16,7 +18,7 @@ class Navbar extends React.Component {
             <nav className="navbar navbar-expand-lg navbar-light " id='header'>
 
                 <Link className="navbar-brand" to="#">
-                    <img src={icon} id='brand' width="200" height="80" className="d-inline-block align-top" alt="IconDisk" />
+                    <img src={brand} id='brand' width="200" height="80" className="d-inline-block align-top" alt="IconDisk" />
                     <span className="menu-collapsed" ></span>
 
                 </Link>
@@ -27,24 +29,33 @@ class Navbar extends React.Component {
                 </button>
 
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul className="navbar-nav ml-auto" id='contItem'>
+                    <ul className="navbar-nav " id='contItem'>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/"> <img src={Home} width="25"/>  INICIO  </Link>
+                            <Link className="nav-link" to="/"> <img src={product} width="35" />  PRODUCTOS  </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/About"> <img src='#' /> SOBRE MI </Link>
+                            <Link className="nav-link" to="/About"> <img src={liquor} width="35" /> LICORES </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/Services"> <img src='#'/>  SERVICIOS  </Link>
+                            <Link className="nav-link" to="/Services"> <img src={beer} width="35" />  CERVEZAS </Link>
                         </li>
 
 
                         <li className="nav-item">
-                            <Link className="nav-link" to="/Projects"> <img src='#'/> PROYECTOS  </Link>
+                            <Link className="nav-link" to="/Projects"> <img src={energy} width="35" /> BEBIDAS </Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="btn btn-outline-light btn-contac text-warning" data-toggle="modal" data-target="#modalCompra1">CONTACTAME!</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src={cart} width="35" />
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">aqui hay una vuelta</a>
+                                <a class="dropdown-item" href="#">aqui hay otra vuelta</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"> y mas vueltas</a>
+                            </div>
                         </li>
+
                         <div>
 
                         </div>

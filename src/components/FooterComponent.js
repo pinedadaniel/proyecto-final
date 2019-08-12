@@ -1,75 +1,110 @@
 import React from 'react';
 import './styles/FooterStyle.css'
 import { Link } from 'react-router-dom';
-import phone from '../images/phoneFooter.svg';
-import location from '../images/locationFooter.svg';
-import email from '../images/emailFooter.svg';
-import cell from '../images/cellFooter.svg';
-import cell2 from '../images/cell2Footer.svg';
-import twitter from '../images/twitter.svg';
-import whatsapp from '../images/whatsapp.png';
-import copy from '../images/copyFooter.svg'
 
+import facebook from '../images/facebook.svg';
+import instagram from '../images/instagram.svg';
+import twitter from '../images/twitter.svg';
 
 class Footer extends React.Component {
-    render() {
-        return (
-            <React.Fragment>
-                <footer class=" page-footer font-small blue pt-4">
-                    <div class="container-fluid text-center text-md-left">
-                        <div class="row">
-                            <div class="col-md-4 mt-md-0 mt-3">
-                                <h5 class="text-uppercase textFooterTittle">Programador Front-End</h5>
-                                <p className='textFooterP'> ¿Trabajamos Juntos? Enviame un mensaje a cualquiera de mis redes para que podamos Desarrollar un Proyecto Juntos  :)  Te Espero!! </p>
-                            </div>
-                            <div className='col-1'>
-                                <div className="vl">
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-md-0 mb-3">
-                                <h5 class="text-uppercase linkstittleFooter">contactos</h5>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#!" class="linkFooter"><img src={phone} className='' width='20' /> 4993302</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target='_blank' class="linkFooter"><img src={cell} className='' width='20' /> (+57) 3013700505</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target='_blank' class="linkFooter"><img src={cell2} className='' width='20' /> (+57) 3206545520</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target='_blank' class="linkFooter"><img src={email} className='' width='20' /> Danny.Systemyes@Gmail.com</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target='_blank' class="linkFooter"><img src={location} className='' width='20' /> Localidad: Medellin/Antioquia  </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className='col-1'>
-                                <div className="vl">
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-md-0 mb-3">
-                                <h5 class="text-uppercase linkstittleFooter">Buscame</h5>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#" target='_blank'><img src={twitter} className='iconRedes' width='32' /> @Daniel30953516</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target='_blank'><img src={copy} className='iconRedes' width='32' /> Consulta los Derechos de Autor</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+  render() {
+    return (
+      <React.Fragment>
+        <footer class="footer-area footer--light">
+          <div class="footer-big">
+            <div class="container">
+              <div class="row">
+                
+                <div class="col-md-4 col-sm-4">
+                  <div class="footer-widget">
+                    <div class="footer-menu footer-menu--1">
+                      <h4 class="footer-widget-title"> Aca Abajo va ir una Imagen</h4>
+                      <ul>
+                        <li>
+                          <Link to="#">desde aqui </Link>
+                        </li>
+                        <li>
+                          <Link to="#">pasando por aqui</Link>
+                        </li>
+                        <li>
+                          <Link to="#">hasta aqui</Link>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="footer-copyright text-center py-3 Copyright">© 2019 Copyright:
-                <a href="#"> Licores colombia </a> All Rights Reserved
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                  <div class="footer-widget">
+                    <div class="footer-menu">
+                      <h4 class="footer-widget-title">Contactos</h4>
+                      <ul>
+                        <li>
+                          <a href="https://api.whatsapp.com/send?phone=573206545520&text=Hola!%20Soy%20Daniel%20Pineda%20Enviame%20un%20Mensaje%20y%20Te%20Respondere%20Lo%20Mas%20Rapido%20Posible!%20" target='_blank'>(+57) 3013700505</a>
+                        </li>
+                        <li>
+                          <a href="https://api.whatsapp.com/send?phone=573206545520&text=Hola!%20Soy%20Daniel%20Pineda%20Enviame%20un%20Mensaje%20y%20Te%20Respondere%20Lo%20Mas%20Rapido%20Posible!%20" target='_blank'>(+57) 3206545520</a>
+                        </li>
+                        <li>
+                          <a href="https://mail.google.com/mail/u/0/#inbox" target='_blank'>ColombiaLicores@gmail.com</a>
+                        </li>
+                       
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                  <div class="footer-widget">
+                    <div class="footer-menu no-padding">
+                      <h4 class="footer-widget-title">Buscanos</h4>
+                      <ul>
+                        <li>
+                          <a href="https://www.facebook.com/Colombialicores" target='_blank'> <img src={facebook} width='24'/> Colombia Licores  </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/colombialicores/?igshid=1x0swfsfqqbny&fbclid=IwAR0Z04mK2hFacMaunlS7YcUcj4anu613BAhQClSbOo85pTJ4k-NK-sGWpdk" target='_blank'><img src={instagram} width='24'/> ColombiaLicores</a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/Colombi51535889?s=07&fbclid=IwAR0Po_V3-qH3arGGdA6Ui0_J3tcCUK3SRjTr0gUvcJ6P7FBJ_nUygRcJLTs"> <img src={twitter} width='24'/>@Colombia Licores</a>
+                        </li>
+                       
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
-                </footer>
-            </React.Fragment>
-        );
-    }
+
+            </div>
+
+          </div>
+
+
+          <div class="mini-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="copyright-text">
+                    <p>© 2019
+                    Copyright All rights reserved. Created by
+                     <Link to="#"> Licores Colombia</Link>
+                    </p>
+                  </div>
+
+                  <div class="go_top">
+                    <span class="icon-arrow-up"></span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </React.Fragment>
+    );
+  }
 }
 
 export default Footer;
