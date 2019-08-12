@@ -1,0 +1,80 @@
+footer{
+    background:black;
+}
+
+.textFooterTittle{
+color:white;
+font-size: 4vh;
+
+}
+.textFooterP{
+color: white;
+font-size: 3vh;
+margin-top: 5vh;
+}
+.linkstittleFooter{
+    color: white;
+    font-size: 4vh;
+}
+
+hr{
+    background:gray;
+}
+
+
+.politics{
+    color: white;
+
+    font-size: 1.1vw;
+}
+.Copyright{
+    color: white;
+
+}
+.linkFooter{
+    color: white;
+    text-decoration: none;
+}
+.iconRedes{
+    display: inline-block;
+}
+.iconRedes:hover{
+    zoom: 98%;
+}
+.itemFooter{
+    font-size: 3vh;
+}
+@media only screen and (max-width: 719px) {
+    footer{
+        background-color: #ffc107;
+    }
+    
+.textFooterTittle{
+    color:white;
+    
+    font-size: 3.8vh;
+        
+    }
+    .textFooterP{
+    color: white;
+
+    }
+    .linkstittleFooter{
+        color: white;
+    }
+    .Copyright{
+        color: white;
+    
+    }
+    .linkFooter{
+        color: white;
+        text-decoration: none;
+    }
+}
+.vl {
+    
+    border-left: 3px solid white;
+    height: 100%;
+    border-radius: 2px;
+ 
+  }
