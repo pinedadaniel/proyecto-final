@@ -3,7 +3,7 @@ import NavBar from '../components/NavbarComponent';
 import Footer from '../components/FooterComponent';
 import what from '../images/whatsapp.svg';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+//import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
 const Layout = (props) => {

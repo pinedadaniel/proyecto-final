@@ -1,0 +1,35 @@
+img {
+    display: block;
+    margin: auto;
+}
+
+div {
+    padding: 0 !important;
+}
+
+p{
+    text-align: center;
+}
+
+h5{
+    text-align: center
+}
+
+.marcas {
+    text-align: center !important;
+    font-weight: bold;
+    margin: 10vh 0 6vh 0;
+    text-decoration: underline;
+}
+
+.imagenes {
+    padding: 7px 0 !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+}
+
+.imagenes:hover {
+    filter: grayscale(95%);
+    transform: rotate(360deg);
+    transition: .8s;
+}
